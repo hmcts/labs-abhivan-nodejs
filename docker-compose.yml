@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  abhivan-nodejs:
+    build:
+      context: .
+      args:
+        - http_proxy
+        - https_proxy
+        - no_proxy
+    ports:
+      - '8080:8080'
